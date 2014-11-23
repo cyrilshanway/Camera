@@ -7,6 +7,8 @@
 //
 
 #import "CameraViewController.h"
+#import "SWRevealViewController.h"
+#import "MainViewController.h"
 
 @interface CameraViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -18,6 +20,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    MainViewController *mainVC = [[MainViewController alloc] init];
+    
+    //設定按鈕顏色
+    mainVC.sideBarButton.tintColor = [UIColor colorWithWhite:0.1f alpha:0.9f];
+    //設定側邊欄按鈕動作，按下時，顯示側邊欄
+    mainVC.sideBarButton.target = self.revealViewController;
+    mainVC.sideBarButton.action = @selector(revealToggle:);
+    
+    //設定手勢
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="zyi-mA-i8b">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
@@ -66,7 +67,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FFk-x6-lS8" id="Owv-vU-erm">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="title" text="APPCODA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tT2-EJ-IS8">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="title" text="Reading" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tT2-EJ-IS8">
                                             <rect key="frame" x="8" y="13" width="115" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -75,7 +76,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="camera" id="HWu-do-M6J">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="camera" id="HWu-do-M6J">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HWu-do-M6J" id="Met-a7-Ooy">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -116,7 +117,7 @@
                                     <segue destination="lsy-Uj-8sN" kind="custom" identifier="capture view controller" customClass="SWRevealViewControllerSegue" id="KeV-vB-4Ba"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="4" reuseIdentifier="web" id="AGd-3K-5KW">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="web" id="AGd-3K-5KW">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AGd-3K-5KW" id="5mV-Fd-hjT">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -133,7 +134,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="PWp-wd-QnS" kind="custom" customClass="SWRevealViewControllerSegue" id="jUT-iN-RKs"/>
+                                    <segue destination="PWp-wd-QnS" kind="custom" identifier="web view controller" customClass="SWRevealViewControllerSegue" id="jUT-iN-RKs"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -255,14 +256,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hyF-hr-4TJ">
-                                <rect key="frame" x="0.0" y="247" width="375" height="420"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backGround.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hFV-BZ-3tC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="667"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8G6-Tv-QAI">
+                                <rect key="frame" x="0.0" y="20" width="375" height="300"/>
+                                <connections>
+                                    <outlet property="delegate" destination="hFV-BZ-3tC" id="5fb-a6-PPU"/>
+                                </connections>
+                            </scrollView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rzx-aS-f6R">
+                                <rect key="frame" x="0.0" y="353" width="375" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="lFf-CS-oBk" id="AHW-pG-Koe"/>
+                                </connections>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="backgroundScrollView" destination="8G6-Tv-QAI" id="fLa-Gm-qyd"/>
+                        <outlet property="webView" destination="rzx-aS-f6R" id="uZa-rc-lC2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7HO-Sm-xBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -270,6 +287,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backGround.jpg" width="315" height="472"/>
         <image name="camera-48.png" width="48" height="37"/>
         <image name="choose_photo-48.png" width="48" height="39"/>
         <image name="menu-32.png" width="32" height="16"/>

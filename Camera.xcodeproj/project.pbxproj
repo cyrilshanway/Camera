@@ -28,6 +28,7 @@
 		76C9D4141A21B64500C5BD61 /* video-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C9D4121A21B64500C5BD61 /* video-48.png */; };
 		76C9D4161A21C73D00C5BD61 /* choose_photo-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C9D4151A21C73C00C5BD61 /* choose_photo-48.png */; };
 		76C9D4191A21C7C800C5BD61 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D4181A21C7C800C5BD61 /* WebViewController.m */; };
+		76C9D44D1A21D1F900C5BD61 /* backGround.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76C9D44C1A21D1F900C5BD61 /* backGround.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		76C9D4151A21C73C00C5BD61 /* choose_photo-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "choose_photo-48.png"; sourceTree = "<group>"; };
 		76C9D4171A21C7C800C5BD61 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		76C9D4181A21C7C800C5BD61 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		76C9D44C1A21D1F900C5BD61 /* backGround.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backGround.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,14 +127,14 @@
 				76C9D3D31A216D4300C5BD61 /* CameraViewController.m */,
 				76C9D3F11A2174A700C5BD61 /* CaptureViewController.h */,
 				76C9D3F21A2174A700C5BD61 /* CaptureViewController.m */,
+				76C9D4171A21C7C800C5BD61 /* WebViewController.h */,
+				76C9D4181A21C7C800C5BD61 /* WebViewController.m */,
 				76C9D3D51A216D4300C5BD61 /* Main.storyboard */,
 				76C9D3D81A216D4300C5BD61 /* Images.xcassets */,
 				76C9D3DA1A216D4300C5BD61 /* LaunchScreen.xib */,
 				76C9D3CB1A216D4300C5BD61 /* Supporting Files */,
 				76C9D3F41A21809000C5BD61 /* HomeViewController.h */,
 				76C9D3F51A21809000C5BD61 /* HomeViewController.m */,
-				76C9D4171A21C7C800C5BD61 /* WebViewController.h */,
-				76C9D4181A21C7C800C5BD61 /* WebViewController.m */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -140,6 +142,7 @@
 		76C9D3CB1A216D4300C5BD61 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				76C9D44C1A21D1F900C5BD61 /* backGround.jpg */,
 				76C9D4151A21C73C00C5BD61 /* choose_photo-48.png */,
 				76C9D4111A21B64500C5BD61 /* camera-48.png */,
 				76C9D4121A21B64500C5BD61 /* video-48.png */,
@@ -258,6 +261,7 @@
 				76C9D4071A21AEB100C5BD61 /* menu.png in Resources */,
 				76C9D4141A21B64500C5BD61 /* video-48.png in Resources */,
 				76C9D3D71A216D4300C5BD61 /* Main.storyboard in Resources */,
+				76C9D44D1A21D1F900C5BD61 /* backGround.jpg in Resources */,
 				76C9D4081A21AEB100C5BD61 /* menu@2x.png in Resources */,
 				76C9D4101A21B5BD00C5BD61 /* web_archive-48.png in Resources */,
 				76C9D3DC1A216D4300C5BD61 /* LaunchScreen.xib in Resources */,
@@ -365,7 +369,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -400,7 +404,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -480,6 +484,7 @@
 				76C9D3ED1A216D4300C5BD61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		76C9D3EE1A216D4300C5BD61 /* Build configuration list for PBXNativeTarget "CameraTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +493,7 @@
 				76C9D3F01A216D4300C5BD61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

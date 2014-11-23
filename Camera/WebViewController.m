@@ -7,8 +7,12 @@
 //
 
 #import "WebViewController.h"
+#import "MainViewController.h"
+#import "SWRevealViewController.h"
 
-@interface WebViewController ()
+@interface WebViewController ()<UIScrollViewDelegate,UIWebViewDelegate>
+@property (weak, nonatomic) IBOutlet UIScrollView *backgroundScrollView;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @end
 
@@ -17,6 +21,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //scrollView(background)
+    self.backgroundScrollView.contentSize = CGSizeMake(320.0f, 900.0f);
+    
+    //webView
+    NSURL *url = [NSURL URLWithString:@"http://www.dubookreading.com/"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    self.webView.delegate = self;
+    [self.webView loadRequest:request];
+
 }
 
 - (void)didReceiveMemoryWarning {
