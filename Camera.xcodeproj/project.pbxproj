@@ -9,11 +9,25 @@
 /* Begin PBXBuildFile section */
 		76C9D3CE1A216D4300C5BD61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D3CD1A216D4300C5BD61 /* main.m */; };
 		76C9D3D11A216D4300C5BD61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D3D01A216D4300C5BD61 /* AppDelegate.m */; };
-		76C9D3D41A216D4300C5BD61 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D3D31A216D4300C5BD61 /* ViewController.m */; };
+		76C9D3D41A216D4300C5BD61 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D3D31A216D4300C5BD61 /* CameraViewController.m */; };
 		76C9D3D71A216D4300C5BD61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76C9D3D51A216D4300C5BD61 /* Main.storyboard */; };
 		76C9D3D91A216D4300C5BD61 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76C9D3D81A216D4300C5BD61 /* Images.xcassets */; };
 		76C9D3DC1A216D4300C5BD61 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C9D3DA1A216D4300C5BD61 /* LaunchScreen.xib */; };
 		76C9D3E81A216D4300C5BD61 /* CameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D3E71A216D4300C5BD61 /* CameraTests.m */; };
+		76C9D3F31A2174A700C5BD61 /* CaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D3F21A2174A700C5BD61 /* CaptureViewController.m */; };
+		76C9D3F61A21809000C5BD61 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D3F51A21809000C5BD61 /* HomeViewController.m */; };
+		76C9D3FD1A21889200C5BD61 /* SidebarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D3FC1A21889200C5BD61 /* SidebarTableViewController.m */; };
+		76C9D4001A21920000C5BD61 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D3FF1A21920000C5BD61 /* MainViewController.m */; };
+		76C9D4041A21942B00C5BD61 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D4031A21942B00C5BD61 /* SWRevealViewController.m */; };
+		76C9D4071A21AEB100C5BD61 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C9D4051A21AEB100C5BD61 /* menu.png */; };
+		76C9D4081A21AEB100C5BD61 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C9D4061A21AEB100C5BD61 /* menu@2x.png */; };
+		76C9D40A1A21AFA200C5BD61 /* mario.ico in Resources */ = {isa = PBXBuildFile; fileRef = 76C9D4091A21AFA200C5BD61 /* mario.ico */; };
+		76C9D40E1A21B4EF00C5BD61 /* menu-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C9D40D1A21B4EF00C5BD61 /* menu-32.png */; };
+		76C9D4101A21B5BD00C5BD61 /* web_archive-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C9D40F1A21B5BD00C5BD61 /* web_archive-48.png */; };
+		76C9D4131A21B64500C5BD61 /* camera-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C9D4111A21B64500C5BD61 /* camera-48.png */; };
+		76C9D4141A21B64500C5BD61 /* video-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C9D4121A21B64500C5BD61 /* video-48.png */; };
+		76C9D4161A21C73D00C5BD61 /* choose_photo-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C9D4151A21C73C00C5BD61 /* choose_photo-48.png */; };
+		76C9D4191A21C7C800C5BD61 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D4181A21C7C800C5BD61 /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +46,34 @@
 		76C9D3CD1A216D4300C5BD61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		76C9D3CF1A216D4300C5BD61 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		76C9D3D01A216D4300C5BD61 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		76C9D3D21A216D4300C5BD61 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		76C9D3D31A216D4300C5BD61 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		76C9D3D21A216D4300C5BD61 /* CameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		76C9D3D31A216D4300C5BD61 /* CameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 		76C9D3D61A216D4300C5BD61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76C9D3D81A216D4300C5BD61 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		76C9D3DB1A216D4300C5BD61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		76C9D3E11A216D4300C5BD61 /* CameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C9D3E61A216D4300C5BD61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76C9D3E71A216D4300C5BD61 /* CameraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraTests.m; sourceTree = "<group>"; };
+		76C9D3F11A2174A700C5BD61 /* CaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureViewController.h; sourceTree = "<group>"; };
+		76C9D3F21A2174A700C5BD61 /* CaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureViewController.m; sourceTree = "<group>"; };
+		76C9D3F41A21809000C5BD61 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		76C9D3F51A21809000C5BD61 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		76C9D3FB1A21889200C5BD61 /* SidebarTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarTableViewController.h; sourceTree = "<group>"; };
+		76C9D3FC1A21889200C5BD61 /* SidebarTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarTableViewController.m; sourceTree = "<group>"; };
+		76C9D3FE1A21920000C5BD61 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		76C9D3FF1A21920000C5BD61 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		76C9D4021A21942B00C5BD61 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		76C9D4031A21942B00C5BD61 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		76C9D4051A21AEB100C5BD61 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		76C9D4061A21AEB100C5BD61 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		76C9D4091A21AFA200C5BD61 /* mario.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = mario.ico; sourceTree = "<group>"; };
+		76C9D40D1A21B4EF00C5BD61 /* menu-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-32.png"; sourceTree = "<group>"; };
+		76C9D40F1A21B5BD00C5BD61 /* web_archive-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "web_archive-48.png"; sourceTree = "<group>"; };
+		76C9D4111A21B64500C5BD61 /* camera-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-48.png"; sourceTree = "<group>"; };
+		76C9D4121A21B64500C5BD61 /* video-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "video-48.png"; sourceTree = "<group>"; };
+		76C9D4151A21C73C00C5BD61 /* choose_photo-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "choose_photo-48.png"; sourceTree = "<group>"; };
+		76C9D4171A21C7C800C5BD61 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		76C9D4181A21C7C800C5BD61 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +117,22 @@
 			children = (
 				76C9D3CF1A216D4300C5BD61 /* AppDelegate.h */,
 				76C9D3D01A216D4300C5BD61 /* AppDelegate.m */,
-				76C9D3D21A216D4300C5BD61 /* ViewController.h */,
-				76C9D3D31A216D4300C5BD61 /* ViewController.m */,
+				76C9D3FE1A21920000C5BD61 /* MainViewController.h */,
+				76C9D3FF1A21920000C5BD61 /* MainViewController.m */,
+				76C9D3FB1A21889200C5BD61 /* SidebarTableViewController.h */,
+				76C9D3FC1A21889200C5BD61 /* SidebarTableViewController.m */,
+				76C9D3D21A216D4300C5BD61 /* CameraViewController.h */,
+				76C9D3D31A216D4300C5BD61 /* CameraViewController.m */,
+				76C9D3F11A2174A700C5BD61 /* CaptureViewController.h */,
+				76C9D3F21A2174A700C5BD61 /* CaptureViewController.m */,
 				76C9D3D51A216D4300C5BD61 /* Main.storyboard */,
 				76C9D3D81A216D4300C5BD61 /* Images.xcassets */,
 				76C9D3DA1A216D4300C5BD61 /* LaunchScreen.xib */,
 				76C9D3CB1A216D4300C5BD61 /* Supporting Files */,
+				76C9D3F41A21809000C5BD61 /* HomeViewController.h */,
+				76C9D3F51A21809000C5BD61 /* HomeViewController.m */,
+				76C9D4171A21C7C800C5BD61 /* WebViewController.h */,
+				76C9D4181A21C7C800C5BD61 /* WebViewController.m */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -96,6 +140,16 @@
 		76C9D3CB1A216D4300C5BD61 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				76C9D4151A21C73C00C5BD61 /* choose_photo-48.png */,
+				76C9D4111A21B64500C5BD61 /* camera-48.png */,
+				76C9D4121A21B64500C5BD61 /* video-48.png */,
+				76C9D40F1A21B5BD00C5BD61 /* web_archive-48.png */,
+				76C9D40D1A21B4EF00C5BD61 /* menu-32.png */,
+				76C9D4091A21AFA200C5BD61 /* mario.ico */,
+				76C9D4051A21AEB100C5BD61 /* menu.png */,
+				76C9D4061A21AEB100C5BD61 /* menu@2x.png */,
+				76C9D4021A21942B00C5BD61 /* SWRevealViewController.h */,
+				76C9D4031A21942B00C5BD61 /* SWRevealViewController.m */,
 				76C9D3CC1A216D4300C5BD61 /* Info.plist */,
 				76C9D3CD1A216D4300C5BD61 /* main.m */,
 			);
@@ -199,9 +253,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C9D40E1A21B4EF00C5BD61 /* menu-32.png in Resources */,
+				76C9D40A1A21AFA200C5BD61 /* mario.ico in Resources */,
+				76C9D4071A21AEB100C5BD61 /* menu.png in Resources */,
+				76C9D4141A21B64500C5BD61 /* video-48.png in Resources */,
 				76C9D3D71A216D4300C5BD61 /* Main.storyboard in Resources */,
+				76C9D4081A21AEB100C5BD61 /* menu@2x.png in Resources */,
+				76C9D4101A21B5BD00C5BD61 /* web_archive-48.png in Resources */,
 				76C9D3DC1A216D4300C5BD61 /* LaunchScreen.xib in Resources */,
 				76C9D3D91A216D4300C5BD61 /* Images.xcassets in Resources */,
+				76C9D4161A21C73D00C5BD61 /* choose_photo-48.png in Resources */,
+				76C9D4131A21B64500C5BD61 /* camera-48.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +281,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76C9D3D41A216D4300C5BD61 /* ViewController.m in Sources */,
+				76C9D3D41A216D4300C5BD61 /* CameraViewController.m in Sources */,
+				76C9D3F31A2174A700C5BD61 /* CaptureViewController.m in Sources */,
 				76C9D3D11A216D4300C5BD61 /* AppDelegate.m in Sources */,
+				76C9D4041A21942B00C5BD61 /* SWRevealViewController.m in Sources */,
+				76C9D4191A21C7C800C5BD61 /* WebViewController.m in Sources */,
+				76C9D4001A21920000C5BD61 /* MainViewController.m in Sources */,
+				76C9D3F61A21809000C5BD61 /* HomeViewController.m in Sources */,
 				76C9D3CE1A216D4300C5BD61 /* main.m in Sources */,
+				76C9D3FD1A21889200C5BD61 /* SidebarTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
