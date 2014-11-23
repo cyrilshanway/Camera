@@ -20,8 +20,8 @@
     // Do any additional setup after loading the view.
     
     //self.title = @"News";
-    //設定按鈕顏色
     
+    //設定按鈕顏色
     _sideBarButton.tintColor = [UIColor colorWithWhite:0.1f alpha:0.3f];
     //設定側邊欄按鈕動作，按下時，顯示側邊欄
     _sideBarButton.target = self.revealViewController;
