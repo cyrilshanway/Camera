@@ -9,8 +9,12 @@
 #import "WebViewController.h"
 #import "MainViewController.h"
 #import "SWRevealViewController.h"
+#import "MBProgressHUD.h"
 
 @interface WebViewController ()<UIScrollViewDelegate,UIWebViewDelegate>
+{
+    MBProgressHUD   *progressHUD;
+}
 @property (weak, nonatomic) IBOutlet UIScrollView *backgroundScrollView;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 
@@ -43,6 +47,22 @@
     
     self.webView.delegate = self;
     [self.webView loadRequest:request];
+    
+    //Loading 圈圈
+    if (progressHUD)
+        [progressHUD removeFromSuperview];
+    
+    progressHUD = [[MBProgressHUD alloc] initWithView:self.view];
+    [self.view addSubview:progressHUD];
+    progressHUD.dimBackground = NO;
+    
+    progressHUD.dimBackground = YES;
+    progressHUD.labelText = @"載入中...";
+    progressHUD.margin = 20.f;
+    progressHUD.yOffset = 10.f;
+    progressHUD.removeFromSuperViewOnHide = YES;
+    [progressHUD show:YES];
+
 
 }
 

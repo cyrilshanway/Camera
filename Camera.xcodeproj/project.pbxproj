@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7665110B1A22C09A0046F22C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7665110A1A22C09A0046F22C /* MBProgressHUD.m */; };
 		76C9D3CE1A216D4300C5BD61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D3CD1A216D4300C5BD61 /* main.m */; };
 		76C9D3D11A216D4300C5BD61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D3D01A216D4300C5BD61 /* AppDelegate.m */; };
 		76C9D3D41A216D4300C5BD61 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D3D31A216D4300C5BD61 /* CameraViewController.m */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		766511091A22C09A0046F22C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		7665110A1A22C09A0046F22C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		76C9D3C81A216D4300C5BD61 /* Camera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Camera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C9D3CC1A216D4300C5BD61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76C9D3CD1A216D4300C5BD61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -96,9 +99,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		766511081A22C09A0046F22C /* MBProgress */ = {
+			isa = PBXGroup;
+			children = (
+				766511091A22C09A0046F22C /* MBProgressHUD.h */,
+				7665110A1A22C09A0046F22C /* MBProgressHUD.m */,
+			);
+			path = MBProgress;
+			sourceTree = "<group>";
+		};
 		76C9D3BF1A216D4300C5BD61 = {
 			isa = PBXGroup;
 			children = (
+				766511081A22C09A0046F22C /* MBProgress */,
 				76C9D3CA1A216D4300C5BD61 /* Camera */,
 				76C9D3E41A216D4300C5BD61 /* CameraTests */,
 				76C9D3C91A216D4300C5BD61 /* Products */,
@@ -292,6 +305,7 @@
 				76C9D4191A21C7C800C5BD61 /* WebViewController.m in Sources */,
 				76C9D4001A21920000C5BD61 /* MainViewController.m in Sources */,
 				76C9D3F61A21809000C5BD61 /* HomeViewController.m in Sources */,
+				7665110B1A22C09A0046F22C /* MBProgressHUD.m in Sources */,
 				76C9D3CE1A216D4300C5BD61 /* main.m in Sources */,
 				76C9D3FD1A21889200C5BD61 /* SidebarTableViewController.m in Sources */,
 			);
