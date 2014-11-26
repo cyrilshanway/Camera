@@ -11,10 +11,11 @@
 #import "SWRevealViewController.h"
 #import "MBProgressHUD.h"
 
-@interface WebViewController ()<UIScrollViewDelegate,UIWebViewDelegate>
+@interface WebViewController ()<UIScrollViewDelegate, UIWebViewDelegate, MBProgressHUDDelegate>
 {
     MBProgressHUD   *progressHUD;
 }
+
 @property (weak, nonatomic) IBOutlet UIScrollView *backgroundScrollView;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 

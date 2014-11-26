@@ -55,7 +55,7 @@
 }
 //delegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 40.0;
+    return 60.0;
 }
 
 #pragma mark - datasource delegate
@@ -72,6 +72,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
+    cell.backgroundColor = [UIColor clearColor];
     
     return cell;
 }
