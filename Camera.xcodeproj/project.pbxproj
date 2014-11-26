@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08968C480271E8C8A5CC03FB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37105F85DB2BA69C91E5415E /* libPods.a */; };
 		7665110B1A22C09A0046F22C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7665110A1A22C09A0046F22C /* MBProgressHUD.m */; };
 		76C9D3CE1A216D4300C5BD61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D3CD1A216D4300C5BD61 /* main.m */; };
 		76C9D3D11A216D4300C5BD61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D3D01A216D4300C5BD61 /* AppDelegate.m */; };
@@ -51,6 +52,12 @@
 		76CBAF251A25C90100A38D61 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76CBAF101A25C90100A38D61 /* Icon@2x.png */; };
 		76CBAF261A25C90100A38D61 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 76CBAF111A25C90100A38D61 /* iTunesArtwork.png */; };
 		76CBAF271A25C90100A38D61 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76CBAF121A25C90100A38D61 /* iTunesArtwork@2x.png */; };
+		76CBAF291A25CD8400A38D61 /* glasses.png in Resources */ = {isa = PBXBuildFile; fileRef = 76CBAF281A25CD8400A38D61 /* glasses.png */; };
+		76CBAF2B1A25CE8D00A38D61 /* eys-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 76CBAF2A1A25CE8D00A38D61 /* eys-64.png */; };
+		76CBAF2D1A25D0E800A38D61 /* Barcode.png in Resources */ = {isa = PBXBuildFile; fileRef = 76CBAF2C1A25D0E800A38D61 /* Barcode.png */; };
+		76CBAF301A25D28B00A38D61 /* ShowBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CBAF2F1A25D28B00A38D61 /* ShowBookViewController.m */; };
+		76CBAF331A25D3F600A38D61 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CBAF321A25D3F600A38D61 /* ScanViewController.m */; };
+		76CBAF371A25D96900A38D61 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CBAF361A25D96900A38D61 /* Book.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +71,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37105F85DB2BA69C91E5415E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		609487E0BCEF9E7DE38C9005 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		766511091A22C09A0046F22C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		7665110A1A22C09A0046F22C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		76C9D3C81A216D4300C5BD61 /* Camera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Camera.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +130,16 @@
 		76CBAF101A25C90100A38D61 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		76CBAF111A25C90100A38D61 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		76CBAF121A25C90100A38D61 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		76CBAF281A25CD8400A38D61 /* glasses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glasses.png; sourceTree = "<group>"; };
+		76CBAF2A1A25CE8D00A38D61 /* eys-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eys-64.png"; sourceTree = "<group>"; };
+		76CBAF2C1A25D0E800A38D61 /* Barcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Barcode.png; sourceTree = "<group>"; };
+		76CBAF2E1A25D28B00A38D61 /* ShowBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowBookViewController.h; sourceTree = "<group>"; };
+		76CBAF2F1A25D28B00A38D61 /* ShowBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowBookViewController.m; sourceTree = "<group>"; };
+		76CBAF311A25D3F600A38D61 /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		76CBAF321A25D3F600A38D61 /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		76CBAF351A25D96900A38D61 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		76CBAF361A25D96900A38D61 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		DE058022D1874F546FF602F5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08968C480271E8C8A5CC03FB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,22 +161,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67BC9DD8813BEDC9497F921D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37105F85DB2BA69C91E5415E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		766511081A22C09A0046F22C /* MBProgress */ = {
 			isa = PBXGroup;
 			children = (
 				766511091A22C09A0046F22C /* MBProgressHUD.h */,
 				7665110A1A22C09A0046F22C /* MBProgressHUD.m */,
 			);
-			path = MBProgress;
+			name = MBProgress;
+			path = ../MBProgress;
 			sourceTree = "<group>";
 		};
 		76C9D3BF1A216D4300C5BD61 = {
 			isa = PBXGroup;
 			children = (
-				766511081A22C09A0046F22C /* MBProgress */,
+				76CBAF341A25D95100A38D61 /* Book */,
 				76C9D3CA1A216D4300C5BD61 /* Camera */,
 				76C9D3E41A216D4300C5BD61 /* CameraTests */,
 				76C9D3C91A216D4300C5BD61 /* Products */,
+				AE664FF7268E0B3FCCACA323 /* Pods */,
+				67BC9DD8813BEDC9497F921D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -184,12 +215,17 @@
 				76C9D3F21A2174A700C5BD61 /* CaptureViewController.m */,
 				76C9D4171A21C7C800C5BD61 /* WebViewController.h */,
 				76C9D4181A21C7C800C5BD61 /* WebViewController.m */,
+				76CBAF311A25D3F600A38D61 /* ScanViewController.h */,
+				76CBAF321A25D3F600A38D61 /* ScanViewController.m */,
+				76CBAF2E1A25D28B00A38D61 /* ShowBookViewController.h */,
+				76CBAF2F1A25D28B00A38D61 /* ShowBookViewController.m */,
 				76C9D3D51A216D4300C5BD61 /* Main.storyboard */,
 				76C9D3D81A216D4300C5BD61 /* Images.xcassets */,
 				76C9D3DA1A216D4300C5BD61 /* LaunchScreen.xib */,
 				76C9D3CB1A216D4300C5BD61 /* Supporting Files */,
 				76C9D3F41A21809000C5BD61 /* HomeViewController.h */,
 				76C9D3F51A21809000C5BD61 /* HomeViewController.m */,
+				766511081A22C09A0046F22C /* MBProgress */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -200,13 +236,16 @@
 				76CBAEFC1A25C90100A38D61 /* iOS 7+ */,
 				76CBAF081A25C90100A38D61 /* iOS 6 */,
 				76C9D44C1A21D1F900C5BD61 /* backGround.jpg */,
+				76CBAF2C1A25D0E800A38D61 /* Barcode.png */,
 				76C9D4151A21C73C00C5BD61 /* choose_photo-48.png */,
 				76C9D4111A21B64500C5BD61 /* camera-48.png */,
+				76CBAF281A25CD8400A38D61 /* glasses.png */,
 				76C9D4121A21B64500C5BD61 /* video-48.png */,
 				76C9D40F1A21B5BD00C5BD61 /* web_archive-48.png */,
 				76C9D40D1A21B4EF00C5BD61 /* menu-32.png */,
 				76C9D4091A21AFA200C5BD61 /* mario.ico */,
 				76C9D4051A21AEB100C5BD61 /* menu.png */,
+				76CBAF2A1A25CE8D00A38D61 /* eys-64.png */,
 				76C9D4061A21AEB100C5BD61 /* menu@2x.png */,
 				76C9D4021A21942B00C5BD61 /* SWRevealViewController.h */,
 				76C9D4031A21942B00C5BD61 /* SWRevealViewController.m */,
@@ -268,6 +307,24 @@
 			path = "iOS 6";
 			sourceTree = "<group>";
 		};
+		76CBAF341A25D95100A38D61 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				76CBAF351A25D96900A38D61 /* Book.h */,
+				76CBAF361A25D96900A38D61 /* Book.m */,
+			);
+			name = Book;
+			sourceTree = "<group>";
+		};
+		AE664FF7268E0B3FCCACA323 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE058022D1874F546FF602F5 /* Pods.debug.xcconfig */,
+				609487E0BCEF9E7DE38C9005 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -275,9 +332,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76C9D3EB1A216D4300C5BD61 /* Build configuration list for PBXNativeTarget "Camera" */;
 			buildPhases = (
+				49B25828C5C92E95F24DE255 /* Check Pods Manifest.lock */,
 				76C9D3C41A216D4300C5BD61 /* Sources */,
 				76C9D3C51A216D4300C5BD61 /* Frameworks */,
 				76C9D3C61A216D4300C5BD61 /* Resources */,
+				D2CBB5778941CCEC801DCB4D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -350,6 +409,7 @@
 			files = (
 				76CBAF211A25C90100A38D61 /* Icon-Small-50@2x.png in Resources */,
 				76C9D40E1A21B4EF00C5BD61 /* menu-32.png in Resources */,
+				76CBAF2D1A25D0E800A38D61 /* Barcode.png in Resources */,
 				76C9D40A1A21AFA200C5BD61 /* mario.ico in Resources */,
 				76C9D4071A21AEB100C5BD61 /* menu.png in Resources */,
 				76C9D4141A21B64500C5BD61 /* video-48.png in Resources */,
@@ -368,10 +428,12 @@
 				76C9D4081A21AEB100C5BD61 /* menu@2x.png in Resources */,
 				76C9D4101A21B5BD00C5BD61 /* web_archive-48.png in Resources */,
 				76CBAF1B1A25C90100A38D61 /* Icon@3x.png in Resources */,
+				76CBAF2B1A25CE8D00A38D61 /* eys-64.png in Resources */,
 				76CBAF191A25C90100A38D61 /* Icon-Small.png in Resources */,
 				76CBAF181A25C90100A38D61 /* Icon-76@2x.png in Resources */,
 				76CBAF131A25C90100A38D61 /* Icon-40.png in Resources */,
 				76CBAF1A1A25C90100A38D61 /* Icon-Small@2x.png in Resources */,
+				76CBAF291A25CD8400A38D61 /* glasses.png in Resources */,
 				76C9D3DC1A216D4300C5BD61 /* LaunchScreen.xib in Resources */,
 				76CBAF171A25C90100A38D61 /* Icon-76.png in Resources */,
 				76C9D3D91A216D4300C5BD61 /* Images.xcassets in Resources */,
@@ -393,6 +455,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49B25828C5C92E95F24DE255 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D2CBB5778941CCEC801DCB4D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		76C9D3C41A216D4300C5BD61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -400,10 +495,13 @@
 			files = (
 				76C9D3D41A216D4300C5BD61 /* CameraViewController.m in Sources */,
 				76C9D3F31A2174A700C5BD61 /* CaptureViewController.m in Sources */,
+				76CBAF301A25D28B00A38D61 /* ShowBookViewController.m in Sources */,
 				76C9D3D11A216D4300C5BD61 /* AppDelegate.m in Sources */,
 				76C9D4041A21942B00C5BD61 /* SWRevealViewController.m in Sources */,
+				76CBAF371A25D96900A38D61 /* Book.m in Sources */,
 				76C9D4191A21C7C800C5BD61 /* WebViewController.m in Sources */,
 				76C9D4001A21920000C5BD61 /* MainViewController.m in Sources */,
+				76CBAF331A25D3F600A38D61 /* ScanViewController.m in Sources */,
 				76C9D3F61A21809000C5BD61 /* HomeViewController.m in Sources */,
 				7665110B1A22C09A0046F22C /* MBProgressHUD.m in Sources */,
 				76C9D3CE1A216D4300C5BD61 /* main.m in Sources */,
@@ -527,6 +625,7 @@
 		};
 		76C9D3EC1A216D4300C5BD61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE058022D1874F546FF602F5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Camera/Info.plist;
@@ -537,6 +636,7 @@
 		};
 		76C9D3ED1A216D4300C5BD61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 609487E0BCEF9E7DE38C9005 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Camera/Info.plist;

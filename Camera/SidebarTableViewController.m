@@ -30,7 +30,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     menuItems = @[
-                  @"title",@"camera",@"video",@"web"];
+                  @"title",@"camera",@"video",@"web",@"search"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,7 +55,7 @@
 }
 //delegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 60.0;
+    return 80.0;
 }
 
 #pragma mark - datasource delegate
