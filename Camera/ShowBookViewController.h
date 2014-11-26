@@ -10,4 +10,5 @@
 
 @interface ShowBookViewController : UIViewController
 
+@property (nonatomic, strong) NSDictionary *currentDictionary;
 @end
