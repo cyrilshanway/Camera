@@ -175,7 +175,7 @@
 
 //https://www.goodreads.com/book/isbn?isbn=9780307887894&key=${WJGaq9KTqxo5n03ngpxRg}&format=xml
 //test isbn:9789867889591
-- (void)scan2BookAPI {
+- (IBAction)scan2BookAPI {
     NSString *enterIsbn = [NSString stringWithFormat:@"%@", self.scanTextField.text];
     
     NSString *urlString = [NSString stringWithFormat:@"http://www.goodreads.com/book/isbn?format=xml&isbn=%@&key=%@",enterIsbn, @"WJGaq9KTqxo5n03ngpxRg"];
@@ -261,7 +261,11 @@
             }
             
         } else {
+            ScanViewController *vc = [[ScanViewController alloc] init];
+            
+            
             NSLog(@"Connection with: %@", connectionError);
+            [self.navigationController pushViewController:vc animated:YES];
         }
         
     }];

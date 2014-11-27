@@ -18,6 +18,12 @@
 		76C7D21C1A26B8780062FEC0 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C7D2111A26B8780062FEC0 /* AFURLConnectionOperation.m */; };
 		76C7D21D1A26B8780062FEC0 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C7D2131A26B8780062FEC0 /* AFXMLRequestOperation.m */; };
 		76C7D21E1A26B8780062FEC0 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C7D2151A26B8780062FEC0 /* UIImageView+AFNetworking.m */; };
+		76C7D25B1A270F430062FEC0 /* pic_back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76C7D2551A270F430062FEC0 /* pic_back.jpg */; };
+		76C7D25C1A270F430062FEC0 /* camre_back4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76C7D2561A270F430062FEC0 /* camre_back4.jpg */; };
+		76C7D25D1A270F430062FEC0 /* camrea_back3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76C7D2571A270F430062FEC0 /* camrea_back3.jpg */; };
+		76C7D25E1A270F430062FEC0 /* camera_back2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76C7D2581A270F430062FEC0 /* camera_back2.jpg */; };
+		76C7D25F1A270F430062FEC0 /* camera_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76C7D2591A270F430062FEC0 /* camera_background.jpg */; };
+		76C7D2601A270F430062FEC0 /* milan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76C7D25A1A270F430062FEC0 /* milan.jpg */; };
 		76C9D3CE1A216D4300C5BD61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D3CD1A216D4300C5BD61 /* main.m */; };
 		76C9D3D11A216D4300C5BD61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D3D01A216D4300C5BD61 /* AppDelegate.m */; };
 		76C9D3D41A216D4300C5BD61 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D3D31A216D4300C5BD61 /* CameraViewController.m */; };
@@ -103,6 +109,12 @@
 		76C7D2131A26B8780062FEC0 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
 		76C7D2141A26B8780062FEC0 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		76C7D2151A26B8780062FEC0 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		76C7D2551A270F430062FEC0 /* pic_back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic_back.jpg; sourceTree = "<group>"; };
+		76C7D2561A270F430062FEC0 /* camre_back4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = camre_back4.jpg; sourceTree = "<group>"; };
+		76C7D2571A270F430062FEC0 /* camrea_back3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = camrea_back3.jpg; sourceTree = "<group>"; };
+		76C7D2581A270F430062FEC0 /* camera_back2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = camera_back2.jpg; sourceTree = "<group>"; };
+		76C7D2591A270F430062FEC0 /* camera_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = camera_background.jpg; sourceTree = "<group>"; };
+		76C7D25A1A270F430062FEC0 /* milan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = milan.jpg; sourceTree = "<group>"; };
 		76C9D3C81A216D4300C5BD61 /* Camera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Camera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C9D3CC1A216D4300C5BD61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76C9D3CD1A216D4300C5BD61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -242,6 +254,20 @@
 			path = Library/AFNetworking;
 			sourceTree = "<group>";
 		};
+		76C7D2541A270F000062FEC0 /* background */ = {
+			isa = PBXGroup;
+			children = (
+				76C7D2551A270F430062FEC0 /* pic_back.jpg */,
+				76C7D2561A270F430062FEC0 /* camre_back4.jpg */,
+				76C7D2571A270F430062FEC0 /* camrea_back3.jpg */,
+				76C7D2581A270F430062FEC0 /* camera_back2.jpg */,
+				76C7D2591A270F430062FEC0 /* camera_background.jpg */,
+				76C7D25A1A270F430062FEC0 /* milan.jpg */,
+				76C9D44C1A21D1F900C5BD61 /* backGround.jpg */,
+			);
+			name = background;
+			sourceTree = "<group>";
+		};
 		76C9D3BF1A216D4300C5BD61 = {
 			isa = PBXGroup;
 			children = (
@@ -297,9 +323,9 @@
 		76C9D3CB1A216D4300C5BD61 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				76C7D2541A270F000062FEC0 /* background */,
 				76CBAEFC1A25C90100A38D61 /* iOS 7+ */,
 				76CBAF081A25C90100A38D61 /* iOS 6 */,
-				76C9D44C1A21D1F900C5BD61 /* backGround.jpg */,
 				76CBAF2C1A25D0E800A38D61 /* Barcode.png */,
 				76C9D4151A21C73C00C5BD61 /* choose_photo-48.png */,
 				76C9D4111A21B64500C5BD61 /* camera-48.png */,
@@ -478,6 +504,7 @@
 				76C9D4071A21AEB100C5BD61 /* menu.png in Resources */,
 				76C9D4141A21B64500C5BD61 /* video-48.png in Resources */,
 				76C9D3D71A216D4300C5BD61 /* Main.storyboard in Resources */,
+				76C7D25F1A270F430062FEC0 /* camera_background.jpg in Resources */,
 				76CBAF261A25C90100A38D61 /* iTunesArtwork.png in Resources */,
 				76CBAF251A25C90100A38D61 /* Icon@2x.png in Resources */,
 				76CBAF1E1A25C90100A38D61 /* Icon-72.png in Resources */,
@@ -485,8 +512,12 @@
 				76CBAF221A25C90100A38D61 /* Icon-Small.png in Resources */,
 				76CBAF1F1A25C90100A38D61 /* Icon-72@2x.png in Resources */,
 				76CBAF1C1A25C90100A38D61 /* iTunesArtwork.png in Resources */,
+				76C7D25C1A270F430062FEC0 /* camre_back4.jpg in Resources */,
 				76CBAF271A25C90100A38D61 /* iTunesArtwork@2x.png in Resources */,
+				76C7D2601A270F430062FEC0 /* milan.jpg in Resources */,
+				76C7D25B1A270F430062FEC0 /* pic_back.jpg in Resources */,
 				76C9D44D1A21D1F900C5BD61 /* backGround.jpg in Resources */,
+				76C7D25E1A270F430062FEC0 /* camera_back2.jpg in Resources */,
 				76CBAF241A25C90100A38D61 /* Icon.png in Resources */,
 				76CBAF161A25C90100A38D61 /* Icon-60@2x.png in Resources */,
 				76C9D4081A21AEB100C5BD61 /* menu@2x.png in Resources */,
@@ -500,6 +531,7 @@
 				76CBAF291A25CD8400A38D61 /* glasses.png in Resources */,
 				76C9D3DC1A216D4300C5BD61 /* LaunchScreen.xib in Resources */,
 				76CBAF171A25C90100A38D61 /* Icon-76.png in Resources */,
+				76C7D25D1A270F430062FEC0 /* camrea_back3.jpg in Resources */,
 				76C9D3D91A216D4300C5BD61 /* Images.xcassets in Resources */,
 				76CBAF231A25C90100A38D61 /* Icon-Small@2x.png in Resources */,
 				76CBAF201A25C90100A38D61 /* Icon-Small-50.png in Resources */,
