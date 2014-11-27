@@ -382,12 +382,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IT9-wd-plX">
-                                <rect key="frame" x="85" y="81" width="205" height="49"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JX3-ED-j7K">
                                 <rect key="frame" x="85" y="166" width="215" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -416,7 +410,6 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="ISBNLabel" destination="IT9-wd-plX" id="vSG-Ic-JfS"/>
                         <outlet property="scanTextField" destination="JX3-ED-j7K" id="Yvv-Y9-8T1"/>
                         <segue destination="IcV-gx-5kN" kind="push" identifier="ShowBookViewController" id="97x-8R-c9p"/>
                     </connections>

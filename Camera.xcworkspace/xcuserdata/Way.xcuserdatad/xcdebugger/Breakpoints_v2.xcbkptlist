@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Camera/ScanViewController.m"
-            timestampString = "438694159.495705"
+            timestampString = "438747469.485999"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "190"
-            endingLineNumber = "190"
-            landmarkName = "-scan2BookAPI:"
+            startingLineNumber = "187"
+            endingLineNumber = "187"
+            landmarkName = "-scan2BookAPI"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Camera/ScanViewController.m"
-            timestampString = "438694506.592065"
+            timestampString = "438747469.485999"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
-            landmarkName = "-scan2BookAPI:"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
+            landmarkName = "-scan2BookAPI"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

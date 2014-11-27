@@ -13,13 +13,14 @@
 #import <ZBarSDK.h>
 #import "ShowBookViewController.h"
 #import "SWRevealViewController.h"
+#import "AFNetworking.h"
 
 @interface ScanViewController ()<UIAlertViewDelegate,ZBarReaderDelegate>
 
 //@property (nonatomic, strong) NSDictionary *currentDictionary;
 
 @property (weak, nonatomic) IBOutlet UITextField *scanTextField;
-@property (weak, nonatomic) IBOutlet UILabel *ISBNLabel;
+
 @property Book *myBook;
 @end
 
@@ -33,7 +34,7 @@
                                    action:@selector(dismissKeyboard)];
     
     [self.view addGestureRecognizer:tap];
-    self.ISBNLabel.hidden = YES;
+    
     
     MainViewController *mainVC = [[MainViewController alloc] init];
     
@@ -45,6 +46,9 @@
     
     //設定手勢
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    
+    [self scanBtnPressed];
+    [self scan2BookAPI];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -66,7 +70,7 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
-- (IBAction)scanBtnPressed:(id)sender{
+- (void)scanBtnPressed{
     /*掃描二維條碼部分：
      導入ZBarSDK文件並引入一下框架
      AVFoundation.framework
@@ -135,7 +139,7 @@
         
         
     }
-    else if([ssidPre evaluateWithObject:self.ISBNLabel.text]){
+    else if([ssidPre evaluateWithObject:self.scanTextField.text]){
         
         NSArray *arr = [self.scanTextField.text componentsSeparatedByString:@";"];
         
@@ -171,10 +175,13 @@
 
 //https://www.goodreads.com/book/isbn?isbn=9780307887894&key=${WJGaq9KTqxo5n03ngpxRg}&format=xml
 //test isbn:9789867889591
-- (IBAction)scan2BookAPI:(id)sender {
+- (void)scan2BookAPI {
     NSString *enterIsbn = [NSString stringWithFormat:@"%@", self.scanTextField.text];
     
     NSString *urlString = [NSString stringWithFormat:@"http://www.goodreads.com/book/isbn?format=xml&isbn=%@&key=%@",enterIsbn, @"WJGaq9KTqxo5n03ngpxRg"];
+    
+    NSLog(@"%@", urlString);
+    
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:urlString] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60];
     
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
