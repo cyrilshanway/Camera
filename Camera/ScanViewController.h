@@ -13,4 +13,5 @@
 @interface ScanViewController : UIViewController
 
 @property (nonatomic, strong) NSDictionary *currentDictionary;
+@property Book *myBook;
 @end

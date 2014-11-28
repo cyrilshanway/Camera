@@ -21,7 +21,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *scanTextField;
 
-@property Book *myBook;
+//@property Book *myBook;
 @end
 
 @implementation ScanViewController
@@ -46,9 +46,19 @@
     
     //設定手勢
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    //先讓鍵盤升起
+    //[self.scanTextField becomeFirstResponder];
     
-    [self scanBtnPressed];
-    [self scan2BookAPI];
+//    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+//                                   initWithTarget:self
+//                                   action:@selector(dismissKeyboard)];
+//    
+//    [self.view addGestureRecognizer:tap];
+    
+    //[self scanBtnPressed];
+    //[self scan2BookAPI];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -63,14 +73,47 @@
     return _currentDictionary;
 }
 
-
+-(void)dismissKeyboard {
+    [_scanTextField resignFirstResponder];
+    
+}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
-- (void)scanBtnPressed{
+- (IBAction)ScanBacBtnPressed:(id)sender {
+    /*掃描二維條碼部分：
+     導入ZBarSDK文件並引入一下框架
+     AVFoundation.framework
+     CoreMedia.framework
+     CoreVideo.framework
+     QuartzCore.framework
+     libiconv.dylib
+     引入頭文件#import “ZBarSDK.h” 即可使用
+     當找到條碼時，執行代理方法
+     
+     - (void) imagePickerController: (UIImagePickerController*) reader didFinishPickingMediaWithInfo: (NSDictionary*) info
+     
+     最後讀取並顯示了條碼的圖片和内容。*/
+    
+    ZBarReaderViewController *reader = [ZBarReaderViewController new];
+    reader.readerDelegate = self;
+    reader.supportedOrientationsMask = ZBarOrientationMaskAll;
+    
+    ZBarImageScanner *scanner = reader.scanner;
+    
+    [scanner setSymbology: ZBAR_I25
+                   config: ZBAR_CFG_ENABLE
+                       to: 0];
+    
+    [self presentModalViewController: reader
+                            animated: YES];
+}
+
+//未使用
+- (IBAction):scanBtnPressed{
     /*掃描二維條碼部分：
      導入ZBarSDK文件並引入一下框架
      AVFoundation.framework
@@ -176,6 +219,9 @@
 //https://www.goodreads.com/book/isbn?isbn=9780307887894&key=${WJGaq9KTqxo5n03ngpxRg}&format=xml
 //test isbn:9789867889591
 - (IBAction)scan2BookAPI {
+    //輸入完鍵盤落下
+    [self.scanTextField resignFirstResponder];
+    
     NSString *enterIsbn = [NSString stringWithFormat:@"%@", self.scanTextField.text];
     
     NSString *urlString = [NSString stringWithFormat:@"http://www.goodreads.com/book/isbn?format=xml&isbn=%@&key=%@",enterIsbn, @"WJGaq9KTqxo5n03ngpxRg"];
@@ -203,7 +249,7 @@
                 NSDictionary *bookPulisher = [bookDict objectForKey:@"publisher"];
                 NSDictionary *imageUrl = [bookDict objectForKey:@"image_url"];
                 NSDictionary *bookPageNum = [bookDict objectForKey:@"num_pages"];
-                
+                NSDictionary *bookDiscription = [bookDict objectForKey:@"description"];
                 
                 //找author
                 NSDictionary *bookDict2 = [[[[xmlDictionInfo objectForKey:@"GoodreadsResponse"]
@@ -224,11 +270,16 @@
                 Book *myNewBook = [[Book alloc] init];
                 myNewBook.owner = self.myBook.owner;
                 myNewBook.email = self.myBook.email;
-                // 一本書的資訊
+                myNewBook.name          = bookAuthor[@"text"];
+                myNewBook.title         = bookTitle[@"text"];
+                myNewBook.ISBNNum       = isbnNum[@"text"];
+                myNewBook.bookPublished = bookPublished[@"text"];
+                myNewBook.bookPublisher = bookPulisher[@"text"];
+                myNewBook.imageAuthor   = result;
+                myNewBook.pageNum       = bookPageNum[@"text"];
+                myNewBook.descriptionBook   = bookDiscription[@"text"];
                 
-                //存isbn的array(在我的書櫃頁會先搜尋再去網站api找)
-                //myNewBook.ISBNbookArray =[NSMutableArray arrayWithObject:isbnNum[@"text"]];
-                
+                /*
                 self.currentDictionary = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                           myNewBook.owner,@"owner",
                                           myNewBook.email,@"email",
@@ -239,24 +290,25 @@
                                           bookPulisher[@"text"], @"bookPublisher",
                                           result,@"imageAuthor",
                                           bookPageNum[@"text"],@"pageNum",
+                                          bookDiscription[@"text"],@"description",
                                           nil];//value/key;
                 myNewBook.oneBookInfoDictionary = self.currentDictionary;
-                
-                /*
-                 myNewBook.oneOwnerAllBooks = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                 self.currentDictionary,@"ISBNNum",
-                 nil
-                 ];
-                 
-                 */
-                
+                */
                 self.myBook = myNewBook;
                 
                 
                 //show book
                 
-                ShowBookViewController *vc = [[ShowBookViewController alloc] init];
+//                ShowBookViewController *vc = [[ShowBookViewController alloc] init];
+//                [self.navigationController pushViewController:vc animated:YES];
+                
+                
+                UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                ShowBookViewController* vc = [storyboard instantiateViewControllerWithIdentifier:@"ShowBookViewController"];
+                vc.myBook = myNewBook;
                 [self.navigationController pushViewController:vc animated:YES];
+                
+
                 
             }
             

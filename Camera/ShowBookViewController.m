@@ -13,12 +13,17 @@
 #import "SWRevealViewController.h"
 
 @interface ShowBookViewController ()<UITableViewDataSource,UITableViewDelegate>
-
+{
+    NSArray *myArray;
+}
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *bookImg;
 @property (weak, nonatomic) IBOutlet UILabel *bookTitle;
 @property (weak, nonatomic) IBOutlet UILabel *bookAuthor;
+@property (weak, nonatomic) IBOutlet UIButton *saveBtn;
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
 
@@ -27,6 +32,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    
+    
     
     MainViewController *mainVC = [[MainViewController alloc] init];
     
@@ -39,12 +48,35 @@
     //設定手勢
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     
+    /*
+    self.bookImg.image = self.currentDictionary[@"imageAuthor"];
+    self.descriptionLabel.text = self.currentDictionary[@"description"];
+    self.bookTitle.text = self.currentDictionary[@"title"];
+    self.bookAuthor.text = self.currentDictionary[@"name"];
+    */
     
+    self.bookImg.image = _myBook.imageAuthor;
+    self.descriptionLabel.text = _myBook.descriptionBook;
+    self.bookTitle.text = _myBook.title;
+    self.bookAuthor.text = _myBook.name;
+
+    NSString *publishedString = [NSString stringWithFormat:@"出版社 ： %@", _myBook.bookPublished];
+    NSString *pageNumString = [NSString stringWithFormat:@"頁數 : %@",_myBook.pageNum];
+    NSString *isbnNumString = [NSString stringWithFormat:@"ISBN : %@",_myBook.ISBNNum];
+    
+    //myArray = @[_myBook.bookPublished,_myBook.pageNum,_myBook.ISBNNum];
+    myArray = @[publishedString, pageNumString,isbnNumString];
+    
+    
+    self.scrollView.contentSize = CGSizeMake(320.0f, 500.0f);
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)saveBtnPressed:(id)sender {
+    
 }
 
 /*
@@ -84,12 +116,12 @@
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:requestIdentifier];
             //cell.textLabel.textColor = [UIColor whiteColor];
             
-            cell.textLabel.textColor = [UIColor colorWithRed:241.0f/255.0f green:244.0f/255.0f blue:239.0f/255.0f alpha:1.0f];
+            //cell.textLabel.textColor = [UIColor colorWithRed:241.0f/255.0f green:244.0f/255.0f blue:239.0f/255.0f alpha:1.0f];
             //預設白色，調整tableView的顏色-11/24
-            cell.backgroundColor = [UIColor clearColor];
+            //cell.backgroundColor = [UIColor clearColor];
             //字型
             //cell.textLabel.font = [UIFont systemFontOfSize:20.f];//20.f
-            cell.textLabel.font = [UIFont fontWithName:@"AppleSDGothicNeo-SemiBold" size:20.0f];//20.f
+            //cell.textLabel.font = [UIFont fontWithName:@"AppleSDGothicNeo-SemiBold" size:20.0f];//20.f
             
             
             //
@@ -150,10 +182,15 @@
      
      }
      */
-    cell.textLabel.text = [NSString stringWithFormat:@"出版社 %@",_currentDictionary[@"name"]];
-    cell.textLabel.text = [NSString stringWithFormat:@"頁數 %@",_currentDictionary[@"pageNum"]];
-    cell.textLabel.text = [NSString stringWithFormat:@"ISBN %@",_currentDictionary[@"ISBNNum"]];
-    //cell.textLabel.text = [NSString stringWithFormat:@"頁數 %@",_currentDictionary[@"pageNum"]];
+    
+    /*
+    cell.textLabel.text = _myBook.bookPublished;
+    cell.textLabel.text = _myBook.pageNum;
+    cell.textLabel.text = _myBook.ISBNNum;
+    */
+    cell.textLabel.text = myArray[indexPath.row];
+    
+     //cell.textLabel.text = [NSString stringWithFormat:@"頁數 %@",_currentDictionary[@"pageNum"]];
     
     //cell.detailTextLabel.text = detailDataSource[indexPath.row];
     /*
