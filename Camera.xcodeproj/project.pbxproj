@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		08968C480271E8C8A5CC03FB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37105F85DB2BA69C91E5415E /* libPods.a */; };
 		7665110B1A22C09A0046F22C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7665110A1A22C09A0046F22C /* MBProgressHUD.m */; };
+		76C0DE491A28059F001CBA6B /* circle-facebook-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C0DE481A28059F001CBA6B /* circle-facebook-512.png */; };
 		76C7D2161A26B8780062FEC0 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C7D2041A26B8780062FEC0 /* AFHTTPClient.m */; };
 		76C7D2171A26B8780062FEC0 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C7D2061A26B8780062FEC0 /* AFHTTPRequestOperation.m */; };
 		76C7D2181A26B8780062FEC0 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C7D2081A26B8780062FEC0 /* AFImageRequestOperation.m */; };
@@ -94,6 +95,7 @@
 		609487E0BCEF9E7DE38C9005 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		766511091A22C09A0046F22C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		7665110A1A22C09A0046F22C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		76C0DE481A28059F001CBA6B /* circle-facebook-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-facebook-512.png"; sourceTree = "<group>"; };
 		76C7D2031A26B8780062FEC0 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		76C7D2041A26B8780062FEC0 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
 		76C7D2051A26B8780062FEC0 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -338,6 +340,7 @@
 				76CBAEFC1A25C90100A38D61 /* iOS 7+ */,
 				76CBAF081A25C90100A38D61 /* iOS 6 */,
 				76CBAF2C1A25D0E800A38D61 /* Barcode.png */,
+				76C0DE481A28059F001CBA6B /* circle-facebook-512.png */,
 				76C7D2631A27196E0062FEC0 /* search_48.png */,
 				76C9D4151A21C73C00C5BD61 /* choose_photo-48.png */,
 				76C9D4111A21B64500C5BD61 /* camera-48.png */,
@@ -528,6 +531,7 @@
 				76CBAF271A25C90100A38D61 /* iTunesArtwork@2x.png in Resources */,
 				76C7D2621A2717F40062FEC0 /* search_background.jpg in Resources */,
 				76C7D2601A270F430062FEC0 /* milan.jpg in Resources */,
+				76C0DE491A28059F001CBA6B /* circle-facebook-512.png in Resources */,
 				76C7D25B1A270F430062FEC0 /* pic_back.jpg in Resources */,
 				76C9D44D1A21D1F900C5BD61 /* backGround.jpg in Resources */,
 				76C7D25E1A270F430062FEC0 /* camera_back2.jpg in Resources */,
