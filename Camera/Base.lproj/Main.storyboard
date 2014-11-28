@@ -99,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="-1022.5" y="-684.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="2Ev-lA-JL3">
             <objects>
-                <viewController id="6fY-F3-K3e" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="6fY-F3-K3e" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XYX-sV-QUY"/>
                         <viewControllerLayoutGuide type="bottom" id="dsf-mv-bxs"/>
@@ -147,6 +147,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="userEmailTextField" destination="l9s-hy-H76" id="GQQ-ZQ-72a"/>
+                        <outlet property="userNameTextField" destination="ld8-fY-xLr" id="g7Z-Qk-sDm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vTp-St-elQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -460,7 +464,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="JX3-ED-j7K">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="JX3-ED-j7K">
                                 <rect key="frame" x="60" y="630" width="270" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
@@ -488,7 +492,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="605"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -512,18 +516,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4pf-QX-0jH">
-                                <rect key="frame" x="0.0" y="182" width="375" height="250"/>
+                                <rect key="frame" x="0.0" y="200" width="375" height="580"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ne7-fx-pqe" userLabel="Description">
-                                        <rect key="frame" x="0.0" y="4" width="375" height="400"/>
+                                        <rect key="frame" x="0.0" y="-54" width="375" height="700"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </scrollView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ngW-vl-7wl">
-                                <rect key="frame" x="0.0" y="430" width="375" height="375"/>
+                                <rect key="frame" x="0.0" y="500" width="375" height="375"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexColor" red="0.26418234470000002" green="0.1046340504" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -534,25 +539,26 @@
                                 </connections>
                             </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RbZ-HB-MCp">
-                                <rect key="frame" x="40" y="76" width="100" height="100"/>
+                                <rect key="frame" x="30" y="68" width="100" height="130"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZT3-9Z-ihb" userLabel="作者">
-                                <rect key="frame" x="175" y="113" width="158" height="21"/>
+                                <rect key="frame" x="165" y="143" width="165" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yqt-8w-glJ">
-                                <rect key="frame" x="308" y="144" width="46" height="30"/>
+                                <rect key="frame" x="308" y="150" width="48" height="48"/>
                                 <state key="normal" title="Save">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="saveBtnPressed:" destination="IcV-gx-5kN" eventType="touchUpInside" id="Oi1-xh-pDx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlw-fM-5pz" userLabel="書名">
-                                <rect key="frame" x="175" y="74" width="158" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlw-fM-5pz" userLabel="書名">
+                                <rect key="frame" x="165" y="73" width="165" height="71"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -567,7 +573,7 @@
                         <outlet property="bookImg" destination="RbZ-HB-MCp" id="epQ-t5-2jP"/>
                         <outlet property="bookTitle" destination="mlw-fM-5pz" id="h7Z-SZ-h5s"/>
                         <outlet property="descriptionLabel" destination="ne7-fx-pqe" id="Cpe-ve-Fse"/>
-                        <outlet property="saveBtn" destination="Yqt-8w-glJ" id="4KE-MC-Tuq"/>
+                        <outlet property="saveBtn" destination="Yqt-8w-glJ" id="wkt-DC-VDx"/>
                         <outlet property="scrollView" destination="4pf-QX-0jH" id="Yvl-wp-8XZ"/>
                         <outlet property="tableView" destination="ngW-vl-7wl" id="ea6-d1-ZD2"/>
                     </connections>

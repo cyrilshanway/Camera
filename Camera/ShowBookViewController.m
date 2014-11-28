@@ -16,12 +16,13 @@
 {
     NSArray *myArray;
 }
+@property (weak, nonatomic) IBOutlet UIButton *saveBtn;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *bookImg;
 @property (weak, nonatomic) IBOutlet UILabel *bookTitle;
 @property (weak, nonatomic) IBOutlet UILabel *bookAuthor;
-@property (weak, nonatomic) IBOutlet UIButton *saveBtn;
+
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
@@ -33,8 +34,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    
-    
+    [_saveBtn.layer setCornerRadius:25.0f];
+    [_saveBtn.layer setBorderColor:[[UIColor grayColor]CGColor]];
+    [_saveBtn.layer setBorderWidth:2.0f];
     
     
     MainViewController *mainVC = [[MainViewController alloc] init];
@@ -56,19 +58,21 @@
     */
     
     self.bookImg.image = _myBook.imageAuthor;
-    self.descriptionLabel.text = _myBook.descriptionBook;
+    
+    NSString *final = [_myBook.descriptionBook stringByReplacingOccurrencesOfString:@"<br>" withString:@""];
+    self.descriptionLabel.text = final;
     self.bookTitle.text = _myBook.title;
     self.bookAuthor.text = _myBook.name;
 
     NSString *publishedString = [NSString stringWithFormat:@"出版社 ： %@", _myBook.bookPublished];
-    NSString *pageNumString = [NSString stringWithFormat:@"頁數 : %@",_myBook.pageNum];
-    NSString *isbnNumString = [NSString stringWithFormat:@"ISBN : %@",_myBook.ISBNNum];
+    NSString *pageNumString = [NSString stringWithFormat:  @"頁數     : %@",_myBook.pageNum];
+    NSString *isbnNumString = [NSString stringWithFormat:  @"ISBN    : %@",_myBook.ISBNNum];
     
     //myArray = @[_myBook.bookPublished,_myBook.pageNum,_myBook.ISBNNum];
     myArray = @[publishedString, pageNumString,isbnNumString];
     
     
-    self.scrollView.contentSize = CGSizeMake(320.0f, 500.0f);
+    self.scrollView.contentSize = CGSizeMake(320.0f, 1520.0f);
 }
 
 - (void)didReceiveMemoryWarning {

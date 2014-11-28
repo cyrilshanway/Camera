@@ -15,7 +15,7 @@
 #import "SWRevealViewController.h"
 #import "AFNetworking.h"
 
-@interface ScanViewController ()<UIAlertViewDelegate,ZBarReaderDelegate>
+@interface ScanViewController ()<UIAlertViewDelegate,ZBarReaderDelegate,UIGestureRecognizerDelegate>
 
 //@property (nonatomic, strong) NSDictionary *currentDictionary;
 
@@ -48,12 +48,6 @@
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     //先讓鍵盤升起
     //[self.scanTextField becomeFirstResponder];
-    
-//    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
-//                                   initWithTarget:self
-//                                   action:@selector(dismissKeyboard)];
-//    
-//    [self.view addGestureRecognizer:tap];
     
     //[self scanBtnPressed];
     //[self scan2BookAPI];
@@ -222,7 +216,9 @@
     //輸入完鍵盤落下
     [self.scanTextField resignFirstResponder];
     
-    NSString *enterIsbn = [NSString stringWithFormat:@"%@", self.scanTextField.text];
+    NSString *final = [self.scanTextField.text stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    NSString *enterIsbn = [NSString stringWithFormat:@"%@", final];
     
     NSString *urlString = [NSString stringWithFormat:@"http://www.goodreads.com/book/isbn?format=xml&isbn=%@&key=%@",enterIsbn, @"WJGaq9KTqxo5n03ngpxRg"];
     

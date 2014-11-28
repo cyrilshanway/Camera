@@ -28,10 +28,12 @@
 @property (nonatomic, strong) NSString *owner;
 @property (nonatomic, strong) NSString *email;
 
+@property (nonatomic, strong) UIImage *saveImag;
+
 //判斷
-@property (nonatomic, strong) NSDictionary *oneBookInfoDictionary;//
-@property (nonatomic, strong) NSMutableDictionary *oneOwnerAllBooks;//isbn/oneBookInfoDictionary
-@property (nonatomic, strong) NSMutableArray *ISBNbookArray;
+//@property (nonatomic, strong) NSDictionary *oneBookInfoDictionary;//
+//@property (nonatomic, strong) NSMutableDictionary *oneOwnerAllBooks;//isbn/oneBookInfoDictionary
+//@property (nonatomic, strong) NSMutableArray *ISBNbookArray;
 
 @property Book *myBook;
 @end

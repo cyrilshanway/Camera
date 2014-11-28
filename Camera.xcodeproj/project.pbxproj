@@ -10,6 +10,7 @@
 		08968C480271E8C8A5CC03FB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37105F85DB2BA69C91E5415E /* libPods.a */; };
 		7665110B1A22C09A0046F22C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7665110A1A22C09A0046F22C /* MBProgressHUD.m */; };
 		76C0DE491A28059F001CBA6B /* circle-facebook-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C0DE481A28059F001CBA6B /* circle-facebook-512.png */; };
+		76C0DEB01A28797C001CBA6B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C0DEAF1A28797C001CBA6B /* LoginViewController.m */; };
 		76C7D2161A26B8780062FEC0 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C7D2041A26B8780062FEC0 /* AFHTTPClient.m */; };
 		76C7D2171A26B8780062FEC0 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C7D2061A26B8780062FEC0 /* AFHTTPRequestOperation.m */; };
 		76C7D2181A26B8780062FEC0 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C7D2081A26B8780062FEC0 /* AFImageRequestOperation.m */; };
@@ -96,6 +97,8 @@
 		766511091A22C09A0046F22C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		7665110A1A22C09A0046F22C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		76C0DE481A28059F001CBA6B /* circle-facebook-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-facebook-512.png"; sourceTree = "<group>"; };
+		76C0DEAE1A28797C001CBA6B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		76C0DEAF1A28797C001CBA6B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		76C7D2031A26B8780062FEC0 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		76C7D2041A26B8780062FEC0 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
 		76C7D2051A26B8780062FEC0 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -308,6 +311,8 @@
 			children = (
 				76C9D3CF1A216D4300C5BD61 /* AppDelegate.h */,
 				76C9D3D01A216D4300C5BD61 /* AppDelegate.m */,
+				76C0DEAE1A28797C001CBA6B /* LoginViewController.h */,
+				76C0DEAF1A28797C001CBA6B /* LoginViewController.m */,
 				76C9D3FE1A21920000C5BD61 /* MainViewController.h */,
 				76C9D3FF1A21920000C5BD61 /* MainViewController.m */,
 				76C9D3FB1A21889200C5BD61 /* SidebarTableViewController.h */,
@@ -610,6 +615,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76C9D3D41A216D4300C5BD61 /* CameraViewController.m in Sources */,
+				76C0DEB01A28797C001CBA6B /* LoginViewController.m in Sources */,
 				76C9D3F31A2174A700C5BD61 /* CaptureViewController.m in Sources */,
 				76CBAF301A25D28B00A38D61 /* ShowBookViewController.m in Sources */,
 				76C9D3D11A216D4300C5BD61 /* AppDelegate.m in Sources */,
