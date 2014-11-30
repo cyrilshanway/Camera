@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Book.h"
 
 @interface MainViewController : UIViewController
 @property (nonatomic,weak) IBOutlet UIBarButtonItem *sideBarButton;
+@property Book *myBook;
 @end

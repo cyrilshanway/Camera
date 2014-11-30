@@ -8,6 +8,9 @@
 
 #import "MainViewController.h"
 #import "SWRevealViewController.h"
+#import "Book.h"
+#import "ShowBookViewController.h"
+#import <Parse/Parse.h>
 
 @interface MainViewController ()
 

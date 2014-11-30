@@ -14,10 +14,11 @@
 #import "ShowBookViewController.h"
 #import "SWRevealViewController.h"
 #import "AFNetworking.h"
+#import "LoginViewController.h"
 
 @interface ScanViewController ()<UIAlertViewDelegate,ZBarReaderDelegate,UIGestureRecognizerDelegate>
 
-//@property (nonatomic, strong) NSDictionary *currentDictionary;
+//@property (nonatomic, strong) NSDictionary *currentMyDictionary;
 
 @property (weak, nonatomic) IBOutlet UITextField *scanTextField;
 
@@ -227,7 +228,8 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:urlString] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60];
     
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-        if (!connectionError) {
+        if (!connectionError || data != nil) {
+            
             NSError *error = nil;
             
             NSDictionary *xmlDictionInfo = [XMLReader dictionaryForXMLData:data error:&error];
@@ -263,9 +265,20 @@
                 NSData * data = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageUrl[@"text"]]];
                 result = [UIImage imageWithData:data];
                 
+                //NSUserDefault test//-----------------
+                
+                //LoginViewController *logVC = [[LoginViewController alloc] init];
+                
+                NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                NSString *defaultuser = [defaults objectForKey:@"user"];
+                //NSString *defaultEmail = [defaults objectForKey:@"email"];
+                
+                //NSUserDefault test//-----------------
+                
                 Book *myNewBook = [[Book alloc] init];
                 myNewBook.owner = self.myBook.owner;
-                myNewBook.email = self.myBook.email;
+                myNewBook.owner = defaultuser;
+                //myNewBook.email = self.myBook.email;
                 myNewBook.name          = bookAuthor[@"text"];
                 myNewBook.title         = bookTitle[@"text"];
                 myNewBook.ISBNNum       = isbnNum[@"text"];
@@ -274,8 +287,9 @@
                 myNewBook.imageAuthor   = result;
                 myNewBook.pageNum       = bookPageNum[@"text"];
                 myNewBook.descriptionBook   = bookDiscription[@"text"];
+                myNewBook.bookImgUrl    =imageUrl[@"text"];
+        
                 
-                /*
                 self.currentDictionary = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                           myNewBook.owner,@"owner",
                                           myNewBook.email,@"email",
@@ -289,7 +303,7 @@
                                           bookDiscription[@"text"],@"description",
                                           nil];//value/key;
                 myNewBook.oneBookInfoDictionary = self.currentDictionary;
-                */
+                
                 self.myBook = myNewBook;
                 
                 
@@ -297,23 +311,20 @@
                 
 //                ShowBookViewController *vc = [[ShowBookViewController alloc] init];
 //                [self.navigationController pushViewController:vc animated:YES];
-                
-                
-                UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-                ShowBookViewController* vc = [storyboard instantiateViewControllerWithIdentifier:@"ShowBookViewController"];
-                vc.myBook = myNewBook;
-                [self.navigationController pushViewController:vc animated:YES];
-                
+
+                [self performSegueWithIdentifier:@"searchSegue" sender:self];
 
                 
             }
             
         } else {
-            ScanViewController *vc = [[ScanViewController alloc] init];
+//            ScanViewController *vc = [[ScanViewController alloc] init];
+//            
+//            
+//            NSLog(@"Connection with: %@", connectionError);
+//            [self.navigationController pushViewController:vc animated:YES];
             
-            
-            NSLog(@"Connection with: %@", connectionError);
-            [self.navigationController pushViewController:vc animated:YES];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提醒" message:@"查無此書" delegate:self cancelButtonTitle:@"確認" otherButtonTitles: nil];
         }
         
     }];
@@ -330,4 +341,8 @@
 }
 */
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    ShowBookViewController* vc = segue.destinationViewController;
+    vc.myBook = self.myBook;
+}
 @end

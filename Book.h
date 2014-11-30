@@ -17,13 +17,14 @@
 @property (nonatomic, strong) NSString *bookPublished;
 @property (nonatomic, strong) NSString *bookPublisher;
 @property (nonatomic, strong) UIImage *imageAuthor;
+@property (nonatomic, strong) NSString *bookImgUrl;
 
 @property (nonatomic, strong) NSString *smallImgUrl;
 @property (nonatomic, strong) NSString *pageNum;
 //author
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *descriptionBook;
-//@property (nonatomic, readonly)NSString *description;
+
 
 @property (nonatomic, strong) NSString *owner;
 @property (nonatomic, strong) NSString *email;
@@ -31,7 +32,7 @@
 @property (nonatomic, strong) UIImage *saveImag;
 
 //判斷
-//@property (nonatomic, strong) NSDictionary *oneBookInfoDictionary;//
+@property (nonatomic, strong) NSDictionary *oneBookInfoDictionary;//
 //@property (nonatomic, strong) NSMutableDictionary *oneOwnerAllBooks;//isbn/oneBookInfoDictionary
 //@property (nonatomic, strong) NSMutableArray *ISBNbookArray;
 
