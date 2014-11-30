@@ -40,9 +40,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backGround.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QkN-V5-mOy">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="raed_back.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QkN-V5-mOy">
                                 <rect key="frame" x="0.0" y="64" width="375" height="667"/>
                             </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WwM-wQ-77V">
+                                <rect key="frame" x="0.0" y="64" width="375" height="286"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -51,6 +54,7 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="backgroundScrollView" destination="WwM-wQ-77V" id="rCd-ak-k07"/>
                         <outlet property="sideBarButton" destination="dTn-iM-jTR" id="Ujz-EW-o1Y"/>
                     </connections>
                 </viewController>
@@ -633,6 +637,7 @@
         <image name="circle-facebook-512.png" width="512" height="512"/>
         <image name="eys-64.png" width="64" height="64"/>
         <image name="menu-32.png" width="32" height="16"/>
+        <image name="raed_back.jpg" width="625" height="938"/>
         <image name="search_48.png" width="48" height="48"/>
         <image name="search_background.jpg" width="350" height="523"/>
         <image name="video-48.png" width="48" height="32"/>

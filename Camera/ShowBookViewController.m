@@ -37,6 +37,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    //btn 潤飾
     [_saveBtn.layer setCornerRadius:25.0f];
     [_saveBtn.layer setBorderColor:[[UIColor grayColor]CGColor]];
     [_saveBtn.layer setBorderWidth:2.0f];
@@ -55,6 +56,7 @@
     
     self.bookImg.image = _myBook.imageAuthor;
     
+    //針對description做改善
     NSString *final = [_myBook.descriptionBook stringByReplacingOccurrencesOfString:@"<br>" withString:@""];
     self.ShoTextField.text = final;
     
@@ -62,7 +64,7 @@
     frame.origin.y -= 100;
     self.descriptionLabel.frame = frame;
     
-    self.bookTitle.text = _myBook.title;
+    self.bookTitle.text  = _myBook.title;
     self.bookAuthor.text = _myBook.name;
 
     NSString *publishedString = [NSString stringWithFormat:@"出版社 ： %@", _myBook.bookPublished];
@@ -74,7 +76,7 @@
     
     
     
-    
+    //scrollView
     self.scrollView.contentSize = CGSizeMake(320.0f, 820.0f);
 }
 
@@ -107,6 +109,12 @@
     if (myNewBook.email == nil) {
         myNewBook.email = @"default@email.com";
     }
+    
+    //針對imageUrl 前面pic:做修改
+//    NSString *final1 = [_myBook.bookImgUrl stringByReplacingOccurrencesOfString:@"pic: " withString:@""];
+//    self.ShoTextField.text = final1;
+    
+    
     NSDictionary *myDictionary = @{@"ISBN" : myNewBook.ISBNNum,
                                    @"title": myNewBook.title,
                                    @"Owner": myNewBook.owner,
@@ -118,10 +126,9 @@
                                    @"bookPublisher":myNewBook.bookPublisher,
                                    //@"imageAuthor":myNewBook.imageAuthor,
                                    @"pageNum":myNewBook.pageNum,
-                                   @"description":myNewBook.debugDescription,
+                                   @"description":myNewBook.descriptionBook,
                                    @"imageUrl":myNewBook.bookImgUrl
                                    };
-    
     
     PFObject *currentBook = [PFObject objectWithClassName:@"Book" dictionary:myDictionary];
     [currentBook saveInBackground];

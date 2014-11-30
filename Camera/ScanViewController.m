@@ -267,8 +267,6 @@
                 
                 //NSUserDefault test//-----------------
                 
-                //LoginViewController *logVC = [[LoginViewController alloc] init];
-                
                 NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
                 NSString *defaultuser = [defaults objectForKey:@"user"];
                 //NSString *defaultEmail = [defaults objectForKey:@"email"];
