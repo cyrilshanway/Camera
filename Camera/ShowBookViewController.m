@@ -68,8 +68,8 @@
     self.bookAuthor.text = _myBook.name;
 
     NSString *publishedString = [NSString stringWithFormat:@"出版社 ： %@", _myBook.bookPublished];
-    NSString *pageNumString =   [NSString stringWithFormat:  @"頁數     :   %@",_myBook.pageNum];
-    NSString *isbnNumString =   [NSString stringWithFormat:  @"ISBN    :   %@",_myBook.ISBNNum];
+    NSString *pageNumString =   [NSString stringWithFormat:@"頁數     :   %@",_myBook.pageNum];
+    NSString *isbnNumString =   [NSString stringWithFormat:@"ISBN    :   %@",_myBook.ISBNNum];
     
 
     myArray = @[publishedString, pageNumString,isbnNumString];

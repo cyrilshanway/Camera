@@ -43,7 +43,7 @@
     self.backgroundScrollView.contentSize = CGSizeMake(320.0f, 900.0f);
     
     //webView
-    NSURL *url = [NSURL URLWithString:@"http://www.dubookreading.com/"];
+    NSURL *url = [NSURL URLWithString:@"http://www.dureading.com/"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
     self.webView.delegate = self;

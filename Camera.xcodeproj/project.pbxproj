@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		08968C480271E8C8A5CC03FB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37105F85DB2BA69C91E5415E /* libPods.a */; };
+		7602EDB51A2C3E3200687F1A /* about-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 7602EDB41A2C3E3200687F1A /* about-64.png */; };
+		7602EDB81A2C3FB700687F1A /* information-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 7602EDB61A2C3FB700687F1A /* information-64.png */; };
+		7602EDB91A2C3FB700687F1A /* mail-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 7602EDB71A2C3FB700687F1A /* mail-64.png */; };
+		7602EDBB1A2C421B00687F1A /* connect_back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7602EDBA1A2C421B00687F1A /* connect_back.jpg */; };
 		7665110B1A22C09A0046F22C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7665110A1A22C09A0046F22C /* MBProgressHUD.m */; };
 		766609301A2ADA5F009E8578 /* share_bakckground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7666092D1A2ADA5F009E8578 /* share_bakckground.jpg */; };
 		766609311A2ADA5F009E8578 /* raed_back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7666092E1A2ADA5F009E8578 /* raed_back.jpg */; };
 		766609321A2ADA5F009E8578 /* share_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7666092F1A2ADA5F009E8578 /* share_background.jpg */; };
+		766609341A2B2644009E8578 /* recording.png in Resources */ = {isa = PBXBuildFile; fileRef = 766609331A2B2644009E8578 /* recording.png */; };
 		76C0DE491A28059F001CBA6B /* circle-facebook-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C0DE481A28059F001CBA6B /* circle-facebook-512.png */; };
 		76C0DEB01A28797C001CBA6B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C0DEAF1A28797C001CBA6B /* LoginViewController.m */; };
+		76C6E1CC1A2BF6B200D49FC2 /* myBook-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C6E1C91A2BF6B200D49FC2 /* myBook-64.png */; };
+		76C6E1CD1A2BF6B200D49FC2 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C6E1CA1A2BF6B200D49FC2 /* help.png */; };
+		76C6E1CE1A2BF6B200D49FC2 /* share_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C6E1CB1A2BF6B200D49FC2 /* share_64.png */; };
+		76C6E1D11A2BF7C600D49FC2 /* OneBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C6E1D01A2BF7C600D49FC2 /* OneBookViewController.m */; };
 		76C7D2161A26B8780062FEC0 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C7D2041A26B8780062FEC0 /* AFHTTPClient.m */; };
 		76C7D2171A26B8780062FEC0 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C7D2061A26B8780062FEC0 /* AFHTTPRequestOperation.m */; };
 		76C7D2181A26B8780062FEC0 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C7D2081A26B8780062FEC0 /* AFImageRequestOperation.m */; };
@@ -97,14 +106,24 @@
 /* Begin PBXFileReference section */
 		37105F85DB2BA69C91E5415E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		609487E0BCEF9E7DE38C9005 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7602EDB41A2C3E3200687F1A /* about-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about-64.png"; sourceTree = "<group>"; };
+		7602EDB61A2C3FB700687F1A /* information-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "information-64.png"; sourceTree = "<group>"; };
+		7602EDB71A2C3FB700687F1A /* mail-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mail-64.png"; sourceTree = "<group>"; };
+		7602EDBA1A2C421B00687F1A /* connect_back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = connect_back.jpg; sourceTree = "<group>"; };
 		766511091A22C09A0046F22C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		7665110A1A22C09A0046F22C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		7666092D1A2ADA5F009E8578 /* share_bakckground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = share_bakckground.jpg; sourceTree = "<group>"; };
 		7666092E1A2ADA5F009E8578 /* raed_back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = raed_back.jpg; sourceTree = "<group>"; };
 		7666092F1A2ADA5F009E8578 /* share_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = share_background.jpg; sourceTree = "<group>"; };
+		766609331A2B2644009E8578 /* recording.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recording.png; sourceTree = "<group>"; };
 		76C0DE481A28059F001CBA6B /* circle-facebook-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-facebook-512.png"; sourceTree = "<group>"; };
 		76C0DEAE1A28797C001CBA6B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		76C0DEAF1A28797C001CBA6B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		76C6E1C91A2BF6B200D49FC2 /* myBook-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myBook-64.png"; sourceTree = "<group>"; };
+		76C6E1CA1A2BF6B200D49FC2 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
+		76C6E1CB1A2BF6B200D49FC2 /* share_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share_64.png; sourceTree = "<group>"; };
+		76C6E1CF1A2BF7C600D49FC2 /* OneBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneBookViewController.h; sourceTree = "<group>"; };
+		76C6E1D01A2BF7C600D49FC2 /* OneBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneBookViewController.m; sourceTree = "<group>"; };
 		76C7D2031A26B8780062FEC0 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		76C7D2041A26B8780062FEC0 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
 		76C7D2051A26B8780062FEC0 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -234,13 +253,13 @@
 				766511091A22C09A0046F22C /* MBProgressHUD.h */,
 				7665110A1A22C09A0046F22C /* MBProgressHUD.m */,
 			);
-			name = MBProgress;
-			path = ../MBProgress;
+			path = MBProgress;
 			sourceTree = "<group>";
 		};
 		76C7D2011A26B86D0062FEC0 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				766511081A22C09A0046F22C /* MBProgress */,
 				76C7D2021A26B8780062FEC0 /* AFNetworking */,
 			);
 			name = Library;
@@ -276,6 +295,7 @@
 		76C7D2541A270F000062FEC0 /* background */ = {
 			isa = PBXGroup;
 			children = (
+				7602EDBA1A2C421B00687F1A /* connect_back.jpg */,
 				7666092D1A2ADA5F009E8578 /* share_bakckground.jpg */,
 				7666092E1A2ADA5F009E8578 /* raed_back.jpg */,
 				7666092F1A2ADA5F009E8578 /* share_background.jpg */,
@@ -324,6 +344,8 @@
 				76C0DEAF1A28797C001CBA6B /* LoginViewController.m */,
 				76C9D3FE1A21920000C5BD61 /* MainViewController.h */,
 				76C9D3FF1A21920000C5BD61 /* MainViewController.m */,
+				76C6E1CF1A2BF7C600D49FC2 /* OneBookViewController.h */,
+				76C6E1D01A2BF7C600D49FC2 /* OneBookViewController.m */,
 				76C9D3FB1A21889200C5BD61 /* SidebarTableViewController.h */,
 				76C9D3FC1A21889200C5BD61 /* SidebarTableViewController.m */,
 				76C9D3D21A216D4300C5BD61 /* CameraViewController.h */,
@@ -342,7 +364,6 @@
 				76C9D3CB1A216D4300C5BD61 /* Supporting Files */,
 				76C9D3F41A21809000C5BD61 /* HomeViewController.h */,
 				76C9D3F51A21809000C5BD61 /* HomeViewController.m */,
-				766511081A22C09A0046F22C /* MBProgress */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -354,6 +375,10 @@
 				76CBAEFC1A25C90100A38D61 /* iOS 7+ */,
 				76CBAF081A25C90100A38D61 /* iOS 6 */,
 				76CBAF2C1A25D0E800A38D61 /* Barcode.png */,
+				7602EDB61A2C3FB700687F1A /* information-64.png */,
+				7602EDB71A2C3FB700687F1A /* mail-64.png */,
+				7602EDB41A2C3E3200687F1A /* about-64.png */,
+				766609331A2B2644009E8578 /* recording.png */,
 				76C0DE481A28059F001CBA6B /* circle-facebook-512.png */,
 				76C7D2631A27196E0062FEC0 /* search_48.png */,
 				76C9D4151A21C73C00C5BD61 /* choose_photo-48.png */,
@@ -413,6 +438,9 @@
 			isa = PBXGroup;
 			children = (
 				76CBAF091A25C90100A38D61 /* Icon-72.png */,
+				76C6E1C91A2BF6B200D49FC2 /* myBook-64.png */,
+				76C6E1CA1A2BF6B200D49FC2 /* help.png */,
+				76C6E1CB1A2BF6B200D49FC2 /* share_64.png */,
 				76CBAF0A1A25C90100A38D61 /* Icon-72@2x.png */,
 				76CBAF0B1A25C90100A38D61 /* Icon-Small-50.png */,
 				76CBAF0C1A25C90100A38D61 /* Icon-Small-50@2x.png */,
@@ -533,13 +561,16 @@
 				76C9D4071A21AEB100C5BD61 /* menu.png in Resources */,
 				76C9D4141A21B64500C5BD61 /* video-48.png in Resources */,
 				76C9D3D71A216D4300C5BD61 /* Main.storyboard in Resources */,
+				7602EDBB1A2C421B00687F1A /* connect_back.jpg in Resources */,
 				76C7D25F1A270F430062FEC0 /* camera_background.jpg in Resources */,
 				76CBAF261A25C90100A38D61 /* iTunesArtwork.png in Resources */,
 				76CBAF251A25C90100A38D61 /* Icon@2x.png in Resources */,
 				76CBAF1E1A25C90100A38D61 /* Icon-72.png in Resources */,
+				76C6E1CE1A2BF6B200D49FC2 /* share_64.png in Resources */,
 				76CBAF151A25C90100A38D61 /* Icon-60.png in Resources */,
 				76CBAF221A25C90100A38D61 /* Icon-Small.png in Resources */,
 				76CBAF1F1A25C90100A38D61 /* Icon-72@2x.png in Resources */,
+				7602EDB91A2C3FB700687F1A /* mail-64.png in Resources */,
 				766609311A2ADA5F009E8578 /* raed_back.jpg in Resources */,
 				766609321A2ADA5F009E8578 /* share_background.jpg in Resources */,
 				76CBAF1C1A25C90100A38D61 /* iTunesArtwork.png in Resources */,
@@ -553,13 +584,16 @@
 				76C9D44D1A21D1F900C5BD61 /* backGround.jpg in Resources */,
 				76C7D25E1A270F430062FEC0 /* camera_back2.jpg in Resources */,
 				76CBAF241A25C90100A38D61 /* Icon.png in Resources */,
+				7602EDB51A2C3E3200687F1A /* about-64.png in Resources */,
 				76CBAF161A25C90100A38D61 /* Icon-60@2x.png in Resources */,
 				76C9D4081A21AEB100C5BD61 /* menu@2x.png in Resources */,
 				76C9D4101A21B5BD00C5BD61 /* web_archive-48.png in Resources */,
 				76CBAF1B1A25C90100A38D61 /* Icon@3x.png in Resources */,
 				76CBAF2B1A25CE8D00A38D61 /* eys-64.png in Resources */,
+				7602EDB81A2C3FB700687F1A /* information-64.png in Resources */,
 				76CBAF191A25C90100A38D61 /* Icon-Small.png in Resources */,
 				76C7D2641A27196E0062FEC0 /* search_48.png in Resources */,
+				766609341A2B2644009E8578 /* recording.png in Resources */,
 				76CBAF181A25C90100A38D61 /* Icon-76@2x.png in Resources */,
 				76CBAF131A25C90100A38D61 /* Icon-40.png in Resources */,
 				76CBAF1A1A25C90100A38D61 /* Icon-Small@2x.png in Resources */,
@@ -569,6 +603,8 @@
 				76C7D25D1A270F430062FEC0 /* camrea_back3.jpg in Resources */,
 				76C9D3D91A216D4300C5BD61 /* Images.xcassets in Resources */,
 				76C7D2681A2725240062FEC0 /* book.jpg in Resources */,
+				76C6E1CC1A2BF6B200D49FC2 /* myBook-64.png in Resources */,
+				76C6E1CD1A2BF6B200D49FC2 /* help.png in Resources */,
 				76CBAF231A25C90100A38D61 /* Icon-Small@2x.png in Resources */,
 				76CBAF201A25C90100A38D61 /* Icon-Small-50.png in Resources */,
 				76CBAF141A25C90100A38D61 /* Icon-40@2x.png in Resources */,
@@ -632,6 +668,7 @@
 				76CBAF301A25D28B00A38D61 /* ShowBookViewController.m in Sources */,
 				76C9D3D11A216D4300C5BD61 /* AppDelegate.m in Sources */,
 				76C7D21C1A26B8780062FEC0 /* AFURLConnectionOperation.m in Sources */,
+				76C6E1D11A2BF7C600D49FC2 /* OneBookViewController.m in Sources */,
 				76C9D4041A21942B00C5BD61 /* SWRevealViewController.m in Sources */,
 				76C7D2161A26B8780062FEC0 /* AFHTTPClient.m in Sources */,
 				76C7D21B1A26B8780062FEC0 /* AFPropertyListRequestOperation.m in Sources */,

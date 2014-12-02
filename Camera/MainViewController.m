@@ -98,26 +98,31 @@
             
              for (int i = 0 ; i < array1.count; i++) {
              
-             NSInteger x = 40;
-             NSInteger y1 = 40;
+             NSInteger x = 0;
+             NSInteger y1 = 80;
              NSInteger y = 0;
-             NSInteger w = 40;
+             //NSInteger w = 40;
              NSInteger h = 100;//height
              NSInteger g = 40;//間隔
              
              if( (i % 2) == 0) {
-             x = 65;
+             x = 110;
              y = y1 + 0.5*( h + g )* (i-1);
              }
              else {
-             x = 220;
+             x = 250;
              y = y1 + 0.5*( h + g )* (i-2);
              }
-             UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(x, y, 100, 130)];
-             [bgView setBackgroundColor:[UIColor grayColor]];
-             UIImageView* imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 130)];
+             UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(x, y, 80, 110)];
+             [bgView setBackgroundColor:[UIColor lightGrayColor]];
+                 bgView.alpha = 0.9f;
              
-             [imageView setImage:[UIImage imageNamed:[imageArray2 objectAtIndex:i]]];
+             UIImageView* imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 80, 110)];
+             //[self.backgroundScrollView addSubview:bgView];
+             
+                 imageView.image =[imageArray2 objectAtIndex:i];
+                 
+             //[imageView setImage:[UIImage imageNamed:[imageArray2 objectAtIndex:i]]];
              [imageView setContentMode:UIViewContentModeScaleAspectFit];
              [bgView addSubview:imageView];
              //image.backgroundColor = [UIColor grayColor];
@@ -131,13 +136,17 @@
              [buttonList addObject:button];
              [button setTag:i];
              
-             if (i == 0) {
-             //[button addTarget:self action:@selector(buttonPressed2VC:) forControlEvents:UIControlEventTouchUpInside];
-             NSLog(@"ok");
-             }
+                 
+            //[button addTarget:self action:@selector(buttonPressed2VC:) forControlEvents:UIControlEventTouchUpInside];
+             
              
              [self.backgroundScrollView addSubview:bgView];
              [self.backgroundScrollView addSubview:button];
+                 
+//                 if (button.tag == 0) {
+//                                  [button addTarget:self action:@selector(buttonPressed2VC:) forControlEvents:UIControlEventTouchUpInside];
+//                     NSLog(@"ok");
+//                 }
              }
 
             
@@ -170,6 +179,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+//-(void)buttonPressed2VC{
+//    
+//    [self performSegueWithIdentifier:@"OneBookViewController" sender:self];
+//}
+
 /*
 #pragma mark - Navigation
 
@@ -179,5 +193,4 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 @end
